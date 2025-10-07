@@ -1,1 +1,8 @@
-module.exports = { reactStrictMode: true };
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    middlewarePrefetch: "flexible",
+  },
+};
+
+module.exports = nextConfig;
